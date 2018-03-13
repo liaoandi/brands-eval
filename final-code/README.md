@@ -1,4 +1,5 @@
 #(CAPP 30122)Final Group Project on Ethical Consumerism
+
 **Name:**capp-project  
 **Members:** Yuqian Gong, Andi Liao & Xiuyuan Zhang  
 **Group Git Repo:** https://github.com/liaoandi/brands-eval
@@ -14,11 +15,11 @@ Package needed to run the project: Django (2.0.1), pandas(0.22.0), jellyfish (0.
 Built-in Modules imported to run python3 code: csv, re, os 
 
 To get our final code, please run the following git command in the command line:  
-`$ git clone https://github.com/xiuyuanzhang/brands-eval.git`  
+`$ git clone https://github.com/liaoandi/brands-eval.git`  
 
 
 To access our web application, please make sure you are in the correct directory,then enter in the command line:
-` $ cd brand-eval/django-code`
+` $ cd brand-eval/final-code/django-interface`
 ` $ python3 manage.py runserver 9999`  
 
 Then you can open a browser, and put in your address: `127.0.0.1:9999/search/`
