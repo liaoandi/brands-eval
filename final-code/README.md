@@ -1,7 +1,8 @@
 #(CAPP 30122)Final Group Project on Ethical Consumerism
+
 **Name:**capp-project  
 **Members:** Yuqian Gong, Andi Liao & Xiuyuan Zhang  
-**Group Git Repo:** https://github.com/xiuyuanzhang/brands-eval
+**Group Git Repo:** https://github.com/liaoandi/brands-eval
 
 ## Project Objective 
 ----------------------------------------------
