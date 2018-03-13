@@ -1,0 +1,105 @@
+<!-- Written by Xiuyuan Zhang and Yuqian Gong -->
+<!-- Type: Orignal -->
+<!-- This html page shows the result page containing all relevant brands and companies. 
+We use W3school templates to set up the font.
+<-->
+<html>
+<title>Ethical Consumer| Results</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: 'EB Garamond', serif;}
+.myLink {display: none}
+</style>
+
+<!--Navigation Bar-->
+<div class="w3-display-container">
+  <div class="w3-bar w3-top w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="{% url 'search' %}" class="w3-bar-item w3-button"><h4>Ethical Consumer</h4></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="{% url 'search' %}#about" class="w3-bar-item w3-button">About Us</a>
+      <a href="{% url 'search' %}#sources" class="w3-bar-item w3-button">Sources</a>
+      <a href="{% url 'search' %}#further-reading" class="w3-bar-item w3-button">Further Readings</a>
+      <a href="{% url 'search' %}#contact" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+
+
+<body class= "w3-light-grey" >
+<!--Present Search Results based on User Inputs-->
+  <div class = "w3-container" style="margin-left: 70px; margin-top: 100px;">
+    <div class = "w3-row"> <br><br></div>
+    <div class = "w3-row" style="letter-spacing: 4px">
+      <h2> Search Results: </h2> </div>
+
+    <div class="w3-container">
+      <div class = "w3-row w3-center" style="margin-left: 72px;">
+        <div class = "w3-col m6">
+          <h3 class = "w3-center" style="letter-spacing: 4px;"> Brand </h3>
+
+          {% for item in brand_result %}
+          
+          <h4 class = "w3-left">
+          <a href = "{% url 'detail' item.brand_id %}"> &nbsp; {{item.brand_name}}  &nbsp; </a>
+          </h4>
+          {% empty %}
+          <h4 class = "w3-left w3-padding-medium"> Sorry, we currently do not have information for this brand! Please come back later to for more updates!</h4>
+          {% endfor %}
+        </div>
+
+        <div class = "w3-col m6 w3-padding-xlarge" style="padding-left: 100px; padding-right: 100px;">
+        	<br>
+        	<br>
+        	<h5 class = "w3-left" style="text-align: left;"> Hi, is the brand or company you are looking for in here?</h5>
+        	<div class = "w3-left" style="text-align: left;">
+          	<h5> We present the search result here by <span class="w3-tag w3-white">Brand</span> and <span class="w3-tag w3-white">Company</span>. As many of you may know, many fast fashion brands are owned by larger coporates. It is important to not only learn about what the brand is doing but also its mother company's culture and conducts. </h5>
+          	<h5> Click into any of these brand or company names and learn more about their conduct on being an ethical fashion provider. </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Handle exceptions when we do not have brand information for the given user input-->
+    <div class="w3-container">
+      <div class = "w3-row w3-center" style="margin-left: 72px; margin-bottom: 70px;">
+        <div class = "w3-col m6">
+          <br><br><br><br>
+          <h3 class = "w3-center" style="letter-spacing: 4px;"> Company </h3>
+          {% for item in company_result %}
+          <h4 class = "w3-left w3-padding-medium">
+          <a href ="{% url 'detail' item.company_id %}" > &nbsp; {{item.company_name}} &nbsp;</a>
+          </h4>
+          {% empty %}
+          <h4 class = "w3-left w3-padding-medium">Sorry, we currently do not have information for this brand!</h4>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+</html>
+
+
+

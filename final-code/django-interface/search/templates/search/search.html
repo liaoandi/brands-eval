@@ -1,0 +1,232 @@
+<!--Written by Xiuyuan Zhang-->
+<!--Type: Original -->
+<!DOCTYPE html>
+<!--This is for homepage-->
+
+<html>
+<title>Ethical Consumer| homepage</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: 'EB Garamond', serif;}
+.myLink {display: none}
+</style>
+
+
+<!-- Navigation Bar -->
+<div class="w3-display-container">
+  <div class="w3-bar w3-top w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button"><h4>Ethical Consumer</h4></a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">How it Started</a>
+      <a href="#sources" class="w3-bar-item w3-button">Our Sources</a>
+      <a href="#further-reading" class="w3-bar-item w3-button">Further Readings</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+  </div>
+  </div>
+
+<!-- Banner Image -->
+<header class="w3-display-container w3-display-light-grey w3-content w3-wide" style="max-width:100%; min-width:500px margin-top:0;" id="home">
+  <div class="w3-bar w3-display-bottom w3-light-grey">
+    <img src="../../static/search/fabric1.png" width="100%;" height="780px;">
+  </div>
+</header>
+
+<!-- Page content -->
+<body class= "w3-light-grey" >
+  <div class="w3-content" style="max-width:1100px">
+    <!-- Search Bar -->
+    <div class="w3-row w3-center">
+      <!-- Get Form -->
+      <form method="post">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        {{ form.source.errors }}
+        {{ form.source }}
+        <table style="margin-left: 200px;">
+          <tr>
+            <td style="height: 50px;">
+              {{ form.brand_name.errors }}
+              {{ form.brand_name }}
+            </td>
+            <td>
+              <button class="w3-button w3-dark-grey" type="submit" style="height: 43.5px; letter-spacing: 3px;">Search</button>
+            </td>
+          </tr>
+        </table> 
+      </form>
+    </div>
+  </div>
+
+
+  <div class="w3-content" style="max-width:1300px">
+    <!--ABOUT section-->
+    <div class="w3-row w3-padding-medium" id="about">
+      <br><br>
+      <div class="w3-col m6 w3-hide-small">
+        <br><br><br>
+        <!--VIZ: RADAR PLOT-->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
+
+        <div id='dimension' style="width: 600px; height: 450px; margin-right: 40px; padding-right: 40px;" >
+          {% load static %}
+          <h5>
+          <script type="text/javascript" src = "{% static 'search/dimension.js' %}"></script>
+          </h5>
+        </div>
+      </div>
+      <!--ABOUT section text-->
+      <div class="w3-col m6 w3-border-large" style="margin-bottom: 80px;">
+        <h1 class="w3-center">How It All Started</h1><br>
+        <h5 class="w3-center">by Andi, Flora & Nancy</h5>
+        <p class="w3-large" style="line-height: 30px;">With the hope to be socially-conscious with our own choices, we designed  this website to provide comprehensive information on a variety of fashion brands, sourcing from verifiable third-party organizations. You the user can put in a brand name that you are interested in learning about into the search bar, and, if we have its information, you will be directed to a page with detailed descriptions on this brand's performance. Information includes aspects from <span class="w3-tag w3-white">environment impact</span>, <span class="w3-tag w3-white">fair treatment of their workers </span>, <span class="w3-tag w3-white">social impact</span>, and <span class="w3-tag w3-white">how they prevent animal cruelty</span>. </p>
+        <p class="w3-large w3-text-grey w3-hide-medium">While you will see many brands that you are familiar with when exploring our website, you will also notice that there is incompleteness of information. This is because the idea of ethical consumerism is still new, in some level, to many people. </p>
+      </div>
+    </div>
+  </div>
+
+  <!--SOURCES section-->
+  <div id = "sources">
+    <div class="w3-row" style="margin-left: 40px; margin-right: 40px;">
+      
+      <h1 class= "w3-center"> 
+      <br><br><br><br>
+    Resources We Used</h1><br>
+      <div class = "w3-col m6">
+        <h3 class="w3-right"><a href = "http://fashionrevolution.org/" target="_blank"> <b>Fashion Revolution </b></a>&nbsp; &nbsp;</h3><br>
+        <p class="w3-right w3-large"> Fashion Revolution is a UK-based social enterprise that promotes radical change in the way clothes are sourced, produced and consumed so that clothing is made in a safe, clean and fair way.&nbsp;&nbsp;</p>
+      </div>
+      <div class="w3-col m6 w3-hide-small" style="border-left:1px solid #000;height:150px;"><br></div>
+    </div>
+
+    <div class="w3-row" style="margin-left: 40px; margin-right: 40px;">
+      <div class="w3-col m6 w3-hide-small"><br></div>
+      <div class = "w3-col m6" style="border-left:1px solid #000;height:150px;">
+        <h3 class="w3-left">&nbsp; &nbsp; <a href="https://www.tearfund.org.nz/Get-Involved/Ethical-Fashion-Guide.aspx" target="_blank"><b>Tearfund NZ</b></a></h3><br>
+        <p class="w3-left w3-large w3-padding">Tearfund NZ is a New Zealand based aid agency that conducts their independent reports on global issues such as the refugee crisis, the unfair treatment of factory workers in the fashion industry, climate change.</p>
+      </div>
+    </div>
+
+    <div class="w3-row" style="margin-left: 40px; margin-right: 40px;">
+      <div class = "w3-col m6 w3-padding-medium">
+        <h3 class="w3-right"> <a href="https://cleanclothes.org/" target="_blank"><b>Clean Clothes Campaign</b></a> &nbsp; &nbsp;</h3><br>
+        <p class="w3-right w3-large"> Clean Clothes Campaign is a global alliance dedicated to improving working conditions and empowering workers in the global garment and sportswear industries. &nbsp; &nbsp;</p>
+      </div>
+      <div class="w3-col m6 w3-hide-small" style="border-left:1px solid #000;height:150px;"><br></div>
+    </div>
+
+    <div class="w3-row" style="margin-left: 40px; margin-right: 40px;">
+      <div class="w3-col m6 w3-hide-small"><br></div>
+      <div class = "w3-col m6 w3-padding-medium" style="border-left:1px solid #000;height:140px;">
+        <h3 class="w3-left">&nbsp; &nbsp; <a href="https://www.ethical.org.au" target="_blank"><b>Shop Ethical!</b></a></h3><br>
+        <p class="w3-left w3-large w3-padding"> Shop Ethical! is a shopping guide website that focus on recording fashion companies' track record surronding ethical consumerism issues. It integrates third-party datasets and reports to produce their evaluation. </p>
+      </div>
+    </div>
+
+    <div class="w3-rows" style="margin-left: 40px; margin-right: 40px;">
+      <div class = "w3-col m6 w3-padding-medium">
+            <br>
+        <h3 class="w3-right"><a href="https://issuu.com/fashionrevolution/docs/fr_fashiontransparencyindex2017?e=25766662/47726047"><b>Fashion Transparency Index 2017</b></a> &nbsp; &nbsp;</h3><br>
+        <p class="w3-right w3-large"> Fashion Transparency Index 2017 is a third-party report evaluating fashion clothing lines' transparency in regard to their policies. &nbsp; &nbsp;</p>
+      </div>
+      <div class="w3-col m6 w3-hide-small" style="border-left:1px solid #000;height:80px;"><br></div>
+    </div>
+  </div>
+
+<!--FURTHER READING section-->
+<div id = "further-reading" style="margin-top: 200px;">
+  <div class="w3-row">
+    <br><br>
+    <h1 class= "w3-center"> Further Reading</h1><br>    
+    <div class = "w3-col m6 w3-center">
+      <h3 class = "w3-center"> Intro to Ethical Consumerism</h3>
+      <a href = "https://en.wikipedia.org/wiki/Ethical_consumerism" class = "w3-large"> Wikipedia - Ethical Consumerism </a> <br>
+      <a href = "https://fashionrevolution.org/" class = "w3-large"> Fashion Evolution</a>
+    </div>
+   </div> 
+</div>
+
+  <!--CONTACT US section-->
+  <div id = "contact" style="margin-top: 200px; padding-bottom: 100px;">
+    <div class="w3-row">
+      <h1 class= "w3-center"> Meet the Developers. We Would Love to Hear From You!</h1><br>     
+
+      <div class="w3-row w3-center" id="contact" style="margin:0 auto;"> 
+      <br>
+      <br>   
+        <td width="16.6%" valign="top">
+          <img src="../../static/search/nancy.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="16.5%" height="30%" style="float: left; margin-left: 40px;">
+        </td>
+          
+        <td width="16.6%" valign="top">
+          <div class="w3-content w3-center" style="float: left; width: 180px; padding-top: 50px; padding-left: 10px;"> 
+            <h5 style="text-align: left; padding-left:2px;">Nancy</h5> 
+            <br>
+            Nancy cares deeply about environment and is concerned with the unknown consequences of climate change. For her, designing this project is part of her plan to examine different aspects of her own carbon footprint with in mind the goal to reduce waste and pollution.
+            <br><br>
+            <a href="yuqian919@uchicago.edu"><i class="w3-center fa fa-envelope"></i></a>
+          </div>
+        </td>
+
+
+        <td width="16.6%" valign="top">
+          <img src="../../static/search/andi.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="16.5%" height="30%" style="float: left; margin-left: 40px;">
+        </td> 
+
+        <td width="16.6%" valign="top">
+          <div class="w3-content w3-center" style="float: left; width: 180px; padding-top: 50px; padding-left: 10px;"> 
+            <h5 style="text-align: left; padding-left:2px;">Andi</h5>
+            <br>
+            Andi gets her inspiration from a fashion brand project she did in OgilvyOne, an advertisement company. She loves the idea of bringing data into fashion field, which perfectly fits her interest in data science and marketing.
+            <br><br>
+            <a href="liaoad17@uchicago.edu"><i class="w3-center fa fa-envelope"></i></a>
+          </div>
+        </td>
+
+          
+        <td width="16.6%" valign="top">
+          <img src="../../static/search/flora.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="16.5%" height="30%" style="float: left; margin-left: 40px;">
+        </td>
+        <td width="16.6%" valign="top">    
+          <div class="w3-content w3-center" style="float: left; width: 180px; padding-top: 40px; padding-left: 10px;"> 
+            <h5 style="text-align: left; padding-left:2px;">Flora</h5> 
+            <br>
+            Flora started to explore more ecofriendly products two years ago and, when she has the oppurtunity to learn coding, she wanted to design a website where she can look up the ethical practice of clothing brands.  
+            <br><br>
+            <a href="xiuyuanzhang@uchicago.edu"><i class="w3-center fa fa-envelope"></i></a>
+          </div>
+        </td>
+      </div> 
+    </div> 
+  </div>
+
+</body>
+
+
+<footer class="w3-center w3-light-grey w3-padding-32" style="margin-top: 50px; margin-bottom: 10px;">
+  <p>Ethical Consumer is a group project created in part for the completion of CAPP 30122 course at the University of Chicago. This website is not for commmericial use.</p>
+</footer>
+
+</html>
+

@@ -1,0 +1,474 @@
+brand_id,brand_name,company_name,company_id
+0,3Fish,3Fish,0
+1,Abercrombie & Fitch,Abercrombie & Fitch,1
+2,Abercrombie Kids,Abercrombie & Fitch,1
+3,Hollister,Abercrombie & Fitch,1
+4,Adidas,Adidas,2
+5,Reebok,Adidas,2
+6,Rockport,Adidas,2
+7,Taylor Made,Adidas,2
+8,Alexander McQueen,Alexander McQueen,3
+9,McQ,Alexander McQueen,3
+10,Ally Fashion,Ally Fashion,4
+11,American Apparel,American Apparel,5
+12,Anthea Crawford,Anthea Crawford,6
+13,Bettina Liano,APG & Co,7
+14,Jag,APG & Co,7
+15,Saba,APG & Co,7
+16,Sportscraft,APG & Co,7
+17,T by Bettina Liano,APG & Co,7
+18,Arabella Ramsay,Arabella Ramsay,8
+19,Ryder,Arabella Ramsay,8
+20,Burton Menswear,Arcadia,9
+21,Dorothy Perkins,Arcadia,9
+22,Evans,Arcadia,9
+23,Miss Selfridge,Arcadia,9
+24,Wallis,Arcadia,9
+25,AS Colour,AS Colour,10
+26,ASOS,ASOS,11
+27,Audrey Blue,Audrey Blue,12
+28,Authentic Factory Outlet,Authentics,13
+29,Balmain,Balmain,14
+30,Bardot,Bardot,15
+31,Bardot Junior,Bardot,15
+32,Spurling,Belgravia Group,16
+33,"Zenetti, Ferrari, Dress Circle, Lords",Belgravia Group,16
+34,Ben Sherman,Ben Sherman,17
+35,United Colors of Benetton,Benetton,18
+36,Insight,Bleach,19
+37,Ksubi,Bleach,19
+38,Blue Illusion,Blue Illusion,20
+39,BooHoo,BooHoo,21
+40,Clarks,Brand Collective,22
+41,Elka Collective,Brand Collective,22
+42,Elwood,Brand Collective,22
+43,Final Days,Brand Collective,22
+44,Grosby,Brand Collective,22
+45,Hush Puppies,Brand Collective,22
+46,Julius Marlow,Brand Collective,22
+47,Mossimo,Brand Collective,22
+48,Sachi,Brand Collective,22
+49,Superdry,Brand Collective,22
+50,Volley,Brand Collective,22
+51,Bulgari,Bulgari,23
+52,Bvlgari,Bulgari,23
+53,Burberry,Burberry,24
+54,Cacharel,Cacharel,25
+55,CEO,CAG,26
+56,Ron Bennett,CAG,26
+57,Sew253,CAG,26
+58,Tony Barlow,CAG,26
+59,camilla and marc,Camilla and Marc,27
+60,Bianca Spender,Carla Zampatti,28
+61,Carla Zampatti,Carla Zampatti,28
+62,Osh Kosh,Carter's,29
+63,Chanel,Chanel,30
+64,Dior,Christian Dior,31
+65,Cinnamon Girl,Cinnamon Girl,32
+66,Run Scotty Run,CK Clothing Group,33
+67,Coach,Coach,34
+68,$mart Buy,Coles Supermarkets,35
+69,1st Choice,Coles Supermarkets,35
+70,Coles,Coles Supermarkets,35
+71,Hammer 'N' Tongs,Coles Supermarkets,35
+72,Liquorland,Coles Supermarkets,35
+73,Maxx,Coles Supermarkets,35
+74,Mix,Coles Supermarkets,35
+75,Simply Basics,Coles Supermarkets,35
+76,Steamrail,Coles Supermarkets,35
+77,Tasman Bitter,Coles Supermarkets,35
+78,Tasman Gold,Coles Supermarkets,35
+79,Vintage Cellars,Coles Supermarkets,35
+80,Collette Dinnigan,Collette Dinnigan,36
+81,COAR,Cotton On,37
+82,Cotton On,Cotton On,37
+83,Cotton On Body,Cotton On,37
+84,Cotton On Kids,Cotton On,37
+85,Factorie,Cotton On,37
+86,Rubi,Cotton On,37
+87,Supre,Cotton On,37
+88,Country Road,Country Road,38
+89,Mimco,Country Road,38
+90,Politix,Country Road,38
+91,Trenery,Country Road,38
+92,Witchery,Country Road,38
+93,Cue,Cue Clothing,39
+94,Veronika Maine,Cue Clothing,39
+95,Agenda,David Jones,40
+96,Alta Linea,David Jones,40
+97,David Jones,David Jones,40
+98,Milana,David Jones,40
+99,St James,David Jones,40
+100,Decjuba,Decjuba,41
+101,Declic,Declic,42
+102,7 for All Mankind,Delta Galil,43
+103,Ella Moss,Delta Galil,43
+104,Splendid,Delta Galil,43
+105,Chino Kids,Designworks,44
+106,Dunlop,Designworks,44
+107,Everlast,Designworks,44
+108,Fred Bare,Designworks,44
+109,KT26,Designworks,44
+110,Mooks,Designworks,44
+111,Republic,Designworks,44
+112,Sista,Designworks,44
+113,Slazenger,Designworks,44
+114,Dickies,Dickies,45
+115,Diesel,Diesel,46
+116,lili,Discovery Group,47
+117,DKNY,DKNY,48
+118,Donna Karan,DKNY,48
+119,D & G,Dolce & Gabbana,49
+120,Dolce & Gabbana,Dolce & Gabbana,49
+121,Dom Bagnato,Dom Bagnato,50
+122,Leona Edmiston,Ducker Edmiston,51
+123,Little Leona,Ducker Edmiston,51
+124,M-One-11,Empire Apparel,52
+125,Esprit,Esprit,53
+126,Etiko Fair Trade,Etiko Fair Trade,54
+127,etiko,Etiko,55
+128,Alannah Hill,Factory X Group,56
+129,Dangerfield,Factory X Group,56
+130,Gorman,Factory X Group,56
+131,Jack London,Factory X Group,56
+132,L'urv,Factory X Group,56
+133,Princess Highway,Factory X Group,56
+134,Revival,Factory X Group,56
+135,Temt,Fast Future Brands,57
+136,Valleygirl,Fast Future Brands,57
+137,FCUK,FC,58
+138,French Connection,FC,58
+139,Feathers,Feathers,59
+140,Fields Woman,Fields Knitwear,60
+141,Flair,Flair Industries,61
+142,Fleur Wood,Fleur Wood,62
+143,Forever 21,Forever 21,63
+144,Forever New,Forever New,64
+145,Fruit of the Loom,Fruit of the Loom,65
+146,Vanity Fair,Fruit of the Loom,65
+147,Colorado,Fusion Retail Brands,66
+148,Diana Ferrari,Fusion Retail Brands,66
+149,G-Star,G-Star,67
+150,Gant,Gant,68
+151,Athleta,Gap,69
+152,Banana Republic,Gap,69
+153,Gap,Gap,69
+154,Old Navy,Gap,69
+155,Bisley,Gazal,70
+156,Midford,Gazal,70
+157,General Pants,General Pants,71
+158,General Pants Co Basics,General Pants,71
+159,Metalicus,General Pants,71
+160,Ginger & Smart,Ginger & Smart,72
+161,Giordano,Giordano,73
+162,Armani Jeans,Giorgio Armani,74
+163,Emporio Armani,Giorgio Armani,74
+164,Giorgio Armani,Giorgio Armani,74
+165,Glassons,Glassons,75
+166,Ziggy,Global Design Workshop,76
+167,Gallaz,Globe,77
+168,Globe,Globe,77
+169,Stussy,Globe,77
+170,Brooksfield,Gloweave,78
+171,Gloweave,Gloweave,78
+172,Gordon Smith,Gordon Smith,79
+173,Nouvelle Woman,Gordon Smith,79
+174,Rodney Clark,Gordon Smith,79
+175,Gymboree,Gymboree,80
+176,Cheap Monday,H&M,81
+177,Cos,H&M,81
+178,H&M,H&M,81
+179,Monki,H&M,81
+180,Weekday,H&M,81
+181,Barely There,Hanes Australasia,82
+182,Berlei,Hanes Australasia,82
+183,Bonds,Hanes Australasia,82
+184,Champion,Hanes Australasia,82
+185,Explorer,Hanes Australasia,82
+186,Heroes,Hanes Australasia,82
+187,Hestia,Hanes Australasia,82
+188,Holeproof,Hanes Australasia,82
+189,Jockey,Hanes Australasia,82
+190,Kayser,Hanes Australasia,82
+191,Kolotex,Hanes Australasia,82
+192,Platinum,Hanes Australasia,82
+193,Playtex,Hanes Australasia,82
+194,Razzamatazz,Hanes Australasia,82
+195,Red Robin,Hanes Australasia,82
+196,Rio,Hanes Australasia,82
+197,Sheer Relief,Hanes Australasia,82
+198,TMI Licensed,Hanes Australasia,82
+199,Voodoo,Hanes Australasia,82
+200,Wicked,Hanes Australasia,82
+201,Henleys,Henleys,83
+202,Hermes,Hermes,84
+203,Hot Tuna,Hot Tuna,85
+204,Coast,Hotsprings,86
+205,Cooper St,Hotsprings,86
+206,Flinders Lane,Hotsprings,86
+207,P.E Nation,Hotsprings,86
+208,Evil Twin,House of Quirky,87
+209,MINKPINK,House of Quirky,87
+210,Paint it Red,House of Quirky,87
+211,Quirky Circus,House of Quirky,87
+212,Somedays Lovin,House of Quirky,87
+213,Staple the Label,House of Quirky,87
+214,The Lost Girls,House of Quirky,87
+215,BOSS,Hugo Boss,88
+216,Hugo Boss,Hugo Boss,88
+217,Icebreaker,Icebreaker,89
+218,Ecko Unltd,Iconix,90
+219,Ed Hardy,Iconix,90
+220,Lee Cooper,Iconix,90
+221,Marc Ecko Cut & Sew,Iconix,90
+222,Material World by Madonna,Iconix,90
+223,Umbro,Iconix,90
+224,Zoo York,Iconix,90
+225,Bershka,Inditex,91
+226,Massimo Dutti,Inditex,91
+227,Oysho,Inditex,91
+228,Pull&Bear,Inditex,91
+229,Stradivarius,Inditex,91
+230,ABCD Indie,Industrie Clothing,92
+231,Indie Kids,Industrie Clothing,92
+232,Industrie,Industrie Clothing,92
+233,Jayson Brunsdon,Jayson Brunsdon,93
+234,Jeanswest,Jeanswest,94
+235,Victoria Rose,Jesse Apparel,95
+236,Jimmy Choo,Jimmy Choo,96
+237,Dotti,Just Group,97
+238,Jacqui E,Just Group,97
+239,Jay Jays,Just Group,97
+240,Just Jeans,Just Group,97
+241,Peter Alexander,Just Group,97
+242,Portmans,Just Group,97
+243,Karen Walker,Karen Walker,98
+244,Kate Sylvester,Kate Sylvester,99
+245,Kenneth Cole,Kenneth Cole,100
+246,Balenciaga,Kering Luxury,101
+247,Bottega Veneta,Kering Luxury,101
+248,Gucci,Kering Luxury,101
+249,Yves Saint Laurent,Kering Luxury,101
+250,Kookai,Kookai,102
+251,Kowtow,Kowtow,103
+252,KUKU,KUKU,104
+253,Ladakh,Ladakh,105
+254,Chloe P,Laramy,106
+255,Laramy,Laramy,106
+256,Dockers,Levi's,107
+257,Levi's,Levi's,107
+258,Levis,Levi's,107
+259,Lexington,Lexington,108
+260,Liminal Apparel,Liminal Apparel,109
+261,Acqua di Parma,LVMH,110
+262,Fendi,LVMH,110
+263,Givenchy,LVMH,110
+264,Kenzo,LVMH,110
+265,Louis Vitton,LVMH,110
+266,Marc Jacobs,LVMH,110
+267,Sephora,LVMH,110
+268,Mango,Mango,111
+269,Manning Cartell,Manning Cartell,112
+270,Pennyblack,Max Mara Fashion Group,113
+271,Bebe,Minihaha,114
+272,Fox & Finch,Minihaha,114
+273,Tahlia,Minihaha,114
+274,Moschino,Moschino,115
+275,Motel,Motel,116
+276,Eve Hunter,Mr K,117
+277,Flirt,Mr K,117
+278,Laura K,Mr K,117
+279,Mr K,Mr K,117
+280,Munster,MunsterKids,118
+281,Blazer,Muzza Clothing,119
+282,Babyworld,Myer,120
+283,Basque,Myer,120
+284,Bauhaus,Myer,120
+285,BIB,Myer,120
+286,Blaq,Myer,120
+287,Brooklyn Industries,Myer,120
+288,Charlie Brown,Myer,120
+289,Chloe & Lola,Myer,120
+290,Collection,Myer,120
+291,David Lawrence,Myer,120
+292,Design Studio,Myer,120
+293,Grab,Myer,120
+294,Howard Showers,Myer,120
+295,Innovare Made in Italy,Myer,120
+296,Jack & Milly,Myer,120
+297,Jack Stone,Myer,120
+298,Jeff Banks,Myer,120
+299,Kenji,Myer,120
+300,La De Da,Myer,120
+301,Lost Highway,Myer,120
+302,Maddox,Myer,120
+303,Marcs,Myer,120
+304,Milk & Honey,Myer,120
+305,Milkshake,Myer,120
+306,Mink Denim,Myer,120
+307,Miss Shop,Myer,120
+308,Myer,Myer,120
+309,Origami,Myer,120
+310,Piper,Myer,120
+311,Regatta,Myer,120
+312,Reserve,Myer,120
+313,sass & bide,Myer,120
+314,sass & bide Intimates,Myer,120
+315,Soft Soul,Myer,120
+316,Soho,Myer,120
+317,Sprout,Myer,120
+318,Surf Rider,Myer,120
+319,Tilii,Myer,120
+320,Tokito,Myer,120
+321,Trent Nathan,Myer,120
+322,Urbane,Myer,120
+323,Wayne Cooper,Myer,120
+324,Wayne Jnr by Wayne Cooper,Myer,120
+325,Zazou,Myer,120
+326,Narciso Rodriguez,Narciso Rodriguez,121
+327,Nevenka,Nevenka,122
+328,Lipsy,Next,123
+329,Next,Next,123
+330,NF by Nicola Finetti,Nicola Finetti,124
+331,Nicola Finetti,Nicola Finetti,124
+332,Nicola Waite,Nicola Waite,125
+333,Nicolangela,Nicolangela,126
+334,Nique,Nique,127
+335,Nobody,Nobody,128
+336,Events,Noni B,129
+337,Liz Jordan,Noni B,129
+338,Noni B,Noni B,129
+339,Queenspark,Noni B,129
+340,Nudie Jeans,Nudie Jeans,130
+341,Oakley,Oakley,131
+342,Oroton,OrotonGroup,132
+343,Oxford,Oxford,133
+344,Black Pepper,PAS Group,134
+345,Breakaway,PAS Group,134
+346,Equus,PAS Group,134
+347,Marco Polo,PAS Group,134
+348,Review,PAS Group,134
+349,Yarra Trail,PAS Group,134
+350,Yvonne Black,PAS Group,134
+351,Pavement,Pavement United Brands,135
+352,Pelaco,Pelaco,136
+353,Toronto,Pelaco,136
+354,Perri Cutten,Perri Cutten,137
+355,Jantzen,Perry Ellis International,138
+356,MCD,Perry Ellis International,138
+357,Redsand,Perry Ellis International,138
+358,Pierre Cardin,Pierre Cardin,139
+359,Pilgrim,Pilgrim Clothing,140
+360,A League,PlayCorp,141
+361,AFL,PlayCorp,141
+362,Boomdoggers,PlayCorp,141
+363,Milly,PlayCorp,141
+364,NRL,PlayCorp,141
+365,Prada,Prada,142
+366,BeMe,Pretty Girl,143
+367,Rockmans,Pretty Girl,143
+368,Table Eight,Pretty Girl,143
+369,W. Lane,Pretty Girl,143
+370,Charlie & Me,Pumpkin Patch,144
+371,Pumpkin Patch,Pumpkin Patch,144
+372,Urban Angel,Pumpkin Patch,144
+373,Pure Pod,Pure Pod,145
+374,Bracks,PVH Brands,146
+375,Calvin Klein,PVH Brands,146
+376,Calvin Klein Collection,PVH Brands,146
+377,Calvin Klein Jeans,PVH Brands,146
+378,Calvin Klein Performance,PVH Brands,146
+379,Fred Bracks,PVH Brands,146
+380,Hold Me Tight,PVH Brands,146
+381,Nancy Ganz,PVH Brands,146
+382,Paramount,PVH Brands,146
+383,Pierre Cardin,PVH Brands,146
+384,Spanx,PVH Brands,146
+385,Tommy Hilfiger,PVH Brands,146
+386,Trent Nathan,PVH Brands,146
+387,Van Heusen,PVH Brands,146
+388,Arrow,PVH,147
+389,Izod,PVH,147
+390,Olga,PVH,147
+391,Warner's,PVH,147
+392,R M Williams,R M Williams,148
+393,Polo Ralph Lauren,Ralph Lauren,149
+394,Ralph Lauren,Ralph Lauren,149
+395,Connor,Retail Apparel Group,150
+396,Johnny Bigg,Retail Apparel Group,150
+397,Rockwear,Retail Apparel Group,150
+398,Tarocash,Retail Apparel Group,150
+399,yd.,Retail Apparel Group,150
+400,Rhodes & Beckett,Rhodes & Beckett,151
+401,Cartier,Richemont,152
+402,Chloe,Richemont,152
+403,Rip Curl,Rip Curl,153
+404,Rivers,Rivers,154
+405,Roadhouse,Roadhouse,155
+406,Rodd & Gunn,Rodd & Gunn,156
+407,rrepp,Rrepp,157
+408,Macbeth,Saban Brands,158
+409,Mambo,Saban Brands,158
+410,Paul Frank,Saban Brands,158
+411,Piping Hot,Saban Brands,158
+412,Abelard,Salco,159
+413,Geoffrey Beene,Salco,159
+414,Bluejuice,Seduce,160
+415,Katherine,Seduce,160
+416,Seduce,Seduce,160
+417,Seed,Seed Heritage,161
+418,Sinerji,Sinerji,162
+419,Miss Sixty,Sixty,163
+420,Sonia Rykiel,Sonia by Sonia Rykiel,164
+421,Autograph,Specialty Fashion Group,165
+422,City Chic,Specialty Fashion Group,165
+423,Crossroads,Specialty Fashion Group,165
+424,Katies,Specialty Fashion Group,165
+425,Millers,Specialty Fashion Group,165
+426,Lonsdale,Sports Direct,166
+427,Anthony Squires,Stafford Group,167
+428,F.I.T.S.,Stafford Group,167
+429,Giotto New-Gen,Stafford Group,167
+430,Stafford Ellinson,Stafford Group,167
+431,All About Eve,Stage II,168
+432,Sportsgirl,Sussan Group,169
+433,Sussan,Sussan Group,169
+434,Suzanne Grae,Sussan Group,169
+435,Syke,Syke,170
+436,Temperley London,Temperley London,171
+437,The Ark,The Ark,172
+438,Thomas Cook,Thomas Cook Boot & Clothing,173
+439,Thurley,Thurley,174
+440,Topman,Topshop,175
+441,Topshop,Topshop,175
+442,Tree of Life,Tree of Life,176
+443,Taking Shape,TS 14+,177
+444,TS 14+,TS 14+,177
+445,Uniqlo,Uniqlo,178
+446,Valentino,Valentino Fashion Group,179
+447,Vera Wang Lavender,Vera Wang,180
+448,Versace,Versace,181
+449,Lee,VF Corporation,182
+450,Lucy,VF Corporation,182
+451,Majestic,VF Corporation,182
+452,Nautica,VF Corporation,182
+453,Reef,VF Corporation,182
+454,Riders by Lee,VF Corporation,182
+455,Rock & Republic,VF Corporation,182
+456,Rustler,VF Corporation,182
+457,SmartWool,VF Corporation,182
+458,Vans,VF Corporation,182
+459,Wrangler,VF Corporation,182
+460,Viktor & Rolf,Viktor & Rolf,183
+461,Viktoria,Viktoria + Woods,184
+462,Vivienne Westwood Red Label,Vivienne Westwood,185
+463,Jump,Voyager Distributing Co,186
+464,Kachel,Voyager Distributing Co,186
+465,Ping Pong,Voyager Distributing Co,186
+466,Yo Gabba Gabba!,Wild Brain,187
+467,Azuki,Wish,188
+468,Truese,Wish,188
+469,Wish,Wish,188
+470,Yeojin Bae,Yeojin Bae,189
+471,Zara,Zara,190
+472,Zimmermann,Zimmermann,191

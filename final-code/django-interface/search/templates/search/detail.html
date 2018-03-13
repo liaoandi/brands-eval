@@ -1,0 +1,299 @@
+<!-- Written by Xiuyuan Zhang and Yuqian Gong -->
+<!-- Type: Orignal -->
+<!-- This html page shows the detailed information and charts about a company
+and its brands. Most of the codes are original. We also use W3schools templates to 
+set up the fonts. We also import highcharts javascript templates to visualizae data. 
+A function named foldinout is original code. 
+<-->
+
+<!DOCTYPE html>
+<!-- This is the detail result page -->
+
+<html>
+<title>Ethical Consumer| homepage</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: 'EB Garamond', serif;}
+.myLink {display: none}
+</style>
+
+<!--Navigation Bar-->
+<body>
+<div class="w3-display-container">
+  <div class="w3-bar w3-top w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="{% url 'search' %}" class="w3-bar-item w3-button">Ethical Consumer</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="{% url 'search' %}#about" class="w3-bar-item w3-button">How it Started</a>
+      <a href="{% url 'search' %}#sources" class="w3-bar-item w3-button">Our Sources</a>
+      <a href="{% url 'search' %}#further-reading" class="w3-bar-item w3-button">Further Readings</a>
+      <a href="{% url 'search' %}#contact" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+
+<head>
+    <!--JS-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+
+<body class= "w3-light-grey" >
+    <div class="w3-container" style=" margin-left: 50px; margin-top: 0px; margin-bottom: 60px;">
+        <table width = "100%" border = "0" cellspacing="1" cellpadding="2">
+            <tr align = "left">
+                <td class="borderBottom"><a href = "javascript;:" onClick = "foldinout('company_rating')"></a>
+                    <div class="w3-container" style=" margin-left: 120; margin-top: 50px; margin-bottom: 10px;">
+                        <h2> Mother Company:</h2> <h1> <strong>{{rating.company_name}}</strong> </h1>
+                        <h2> Company's Overall Rating:</h2> <h1> <strong>{{rating.rating}}</strong> </h1>
+                    </div>
+                </td>
+                <td>
+                    <!--GRAPH COMPANY-->
+                    <div id='company_rating' class = "w3-center" style="padding-top: 85px;width: 900px; height: 550px; margin-left: 200px; display:block;" >
+                        {% load static %}
+                        <!--JS-->
+                        <script type="text/javascript" src = "{% static 'search/company_rating.js' %}">
+                        </script>
+                    </div>
+                </td>
+            </tr>
+                <td class = "borderBottom">
+                    <div class="w3-container" style="margin-bottom: 10px;">
+                    </div>
+                </td>
+        </table>
+    </div>
+
+
+<!--FIVE DIMENSION ASSESSMENT-->
+<div class= "w3-container" style="margin-left: 50px; margin-right: 50px; margin-bottom: 30px;">
+    <h2><span class="w3-white w3-padding">Five-Dimension Assessment for <strong>{{rating.company_name}}</strong>: </span> </h2>
+    <table width = "100%" border = "0" cellspacing="3" cellpadding="7">
+        <tr align = "left">
+            <td class = "borderBottom"></td>
+        </tr>
+        
+        <tr>
+            <td width="20%" style="color:#dd1c77" class="borderBottom"><h3><strong>Eco-friendly:</strong></h3></td>
+            <td width="20%" style="color:#dd1c77" class="borderBottom"><h3><strong>Treatment of Workers:</strong></h3></td>
+            <td width="20%" style="color:#dd1c77" class="borderBottom"><h3><strong>Policy Ethics:</strong></h3></td>
+            <td width="20%" style="color:#dd1c77" class="borderBottom"><h3><strong>Treatment of Animals:</strong></h3></td>
+            <td width="20%" style="color:#dd1c77" class="borderBottom"><h3><strong>Other Information</strong></h3></td>
+        </tr>
+        <tr align = "left" valign = "top">
+        <!--COMPANY DETAIL INFO-->
+            <td width = "20%">
+            {% for item in environment %}
+                <h4>
+                <a href = "javascript:;" onClick = "foldinout({{item.id}})"> {{item.abstract}} </a>
+                </h4>
+                <div id = {{item.id}} style = "display:none;">
+                    <h5> <strong>Evaluation:</strong> {{item.post_nega}} </h5>
+                    <h5> <strong>Detais:</strong> {{item.detail}} </h5>
+                </div>
+                {% endfor %}
+            </td>
+
+            <td width = "20%">
+            {% for item in social %}
+                <h5> 
+                <a href = "javascript:;" onClick = "foldinout({{item.id}})"> 
+                {{item.abstract}} 
+                </a>
+                </h5>
+                <div id = {{item.id}} style = "display:none;">
+                    <h5> {{item.post_nega}} </h5>
+                    <h5> {{item.detail}} </h5>
+                </div>
+                {% endfor %}
+            </td>
+
+            <td width = "20%">
+            {% for item in business %}
+                <h5> 
+                <a href = "javascript:;" onClick = "foldinout({{item.id}})"> 
+                {{item.abstract}}
+                </a>
+                </h5>
+                <div id = {{item.id}} style = "display:none;">
+                    <h5> {{item.post_nega}} </h5>
+                    <h5> {{item.detail}} </h5>
+                </div>
+                {% endfor %}
+            </td>
+
+            <td width = "20%">
+            {% for item in animal %}
+            <h5> 
+            <a href = "javascript:;" onClick = "foldinout({{item.id}})"> 
+            {{item.abstract}} 
+            </a>
+            </h5>
+            <div id = {{item.id}} style = "display:none;">
+                <h5> {{item.post_nega}} </h5>
+                <h5> {{item.detail}} </h5>
+            </div>
+            {% endfor %}
+            </td>
+
+            <td width = "20%">
+            {% for item in information %}
+            <h5>
+            <a href = "javascript:;" onClick = "foldinout({{item.id}})"> 
+            {{item.abstract}}
+            </a>
+            </h5>
+            <div id = {{item.id}} style = "display:none;">
+                <h5> {{item.post_nega}} </h5>
+                <h5> {{item.detail}} </h5>
+            </div>
+            {% endfor %}
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<!--WAGE ASSESSMENT-->
+    <div class= "w3-container" style="margin-top: 50px;margin-left: 50px; margin-right: 50px; margin-bottom: 30px;">
+        <h2><span class="w3-white w3-padding">Evaluation on <strong>{{rating.company_name}}</strong>'s Wage payment:</span></h2>
+        <h4>Source：<a href="https://cleanclothes.org/livingwage/tailoredwages/tailored-wage-report-pdf">Clean Clothes Tailored Wage Report</a> </h4>
+        <table width = "100%" border = "0" cellspacing="1" cellpadding="3">
+            <tr align = "left">
+                <td class="borderBottom"></td>
+            </tr>
+            
+            <tr align = "left">
+                <td class="borderBottom"></td>
+            </tr>
+            
+            {% for eva in evaluation %}
+            <tr align = "left">
+                <td class="borderBottom">
+                    <h4> {{eva.evaluation}} </h4>
+                </td>
+            </tr>
+            
+            {% empty %}
+            <tr align = "left">
+                <td class="borderBottom">
+                    <h4>There is no information for this company on wage payment.</h4>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+
+<!--INDIVIDUAL BRANDS-->
+    <div class= "w3-container" style="margin-top: 50px;margin-left: 50px; margin-right: 50px; margin-bottom: 30px;">
+        <h2><span class="w3-white w3-padding">Brand Informaiton:</span></h2>
+        <p>(click on the scores to access graph information)</p>   
+
+        <div class= "w3-container" style="margin-left: 50px;">
+            <table width = "100%" border = "0" cellspacing="1" cellpadding="3">
+            {% for k, v in brands.items %}  
+                <tr>
+                    <td>
+                    <h3><strong>{{k.brand_name}}</strong></h3>  
+                    </td>
+                </tr> 
+                {% for m, j in v.items %}
+            
+                <tr align = "left">
+                {% if m == "trans_index" %}
+                    <td class="borderBottom">
+                        <h4> <a href = "javascript:;" onClick = "foldinout('container')">Transparency Score:</a></h4>      
+            
+                        <div id='container' style="width: 600px; height: 300px; margin: 0 auto; display:block;" >   
+                            <script>
+                            var policy = {{j.policy}}
+                            var tracking = {{j.tracking}}
+                            var social = {{j.social}}
+                            var engage = {{j.engage}}
+                            var governance = {{j.governance}}
+                            var score = {{j.score}}
+                            var context = 'container'
+                            </script>    
+                        {% load static %}
+                            <script type="text/javascript" src = "{% static 'search/transparency.js' %}"> 
+                            </script>
+                        </div>
+                    </td>
+                {% endif %}       
+
+                    <td>
+                        {% if m == "labour_rating" %}
+                        <h4> <a href = "javascript:;" onClick = "foldinout('r_{{j.brand_id}}')">
+                        Labour Rating Score: </a></h4>
+                        <h5> {{j.labour_rating}}</h5>
+                        {% load static %}
+                        <div id = "r_{{j.brand_id}}" style= "width: 600px; height: 300px; margin: 0 auto; display:block;">
+
+                        <script>
+                        var context_var = "r_{{j.brand_id}}"
+                         
+                        </script>
+                        <h5>    
+                        <script type="text/javascript" src = "{% static 'search/labour_rating.js' %}"> 
+                        </script>
+                        </h5>
+                        </div>
+                    </td>
+                        {% endif %}
+                    <td>
+                        {% empty %}
+                        <h4> There is no information for this brand currently </h4>
+                    </td>
+                </tr>
+            {% endfor %}
+            </table>
+        {% endfor %}
+        </div>
+    </div>
+
+</body>
+
+
+<script>
+  function foldinout(theid){
+        var theid=document.getElementById(theid);
+        if(theid.style.display=="block") {
+            theid.style.display = 'none';
+        }
+        else {
+            theid.style.display = 'block';
+        }
+    }
+</script>
+
+</html>
+
+
+
+
+
+
+
+
