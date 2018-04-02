@@ -1,5 +1,6 @@
-## (CAPP 30122)Final Group Project on Ethical Consumerism
+## CAPP 30122 - Final Group Project on Ethical Consumerism
 --------------------------------------------------------
+
 
 **Name:**capp-project  
 **Members:** Yuqian Gong, Andi Liao & Xiuyuan Zhang  
@@ -34,17 +35,15 @@ The above suggested inputs covers three scenarios, where (1) is when a user know
 
 ## Code Structure & Task Division
 -----------------------------------------------
-data 
+**data**
 1. data source/ cleaning
 The data of our projet comes from two parts, the first part comes from web crawling, and the second part comes from pdf reports.
 
-1.1 Web Crawling
-We observed the website structure of Shop Ethical, and then used request and beautifulsoup to download all the company tables under "clothes" category.
-We didn't take extra protection measures, such as, setting waiting time between visiting different companies, as Shop Ethical is a realtively small website.
+	1.1 Web Crawling
+	We observed the website structure of Shop Ethical, and then used request and beautifulsoup to download all the company tables under "clothes" category. We didn't take extra protection measures, such as, setting waiting time between visiting different companies, as Shop Ethical is a realtively small website.
 
-1.2 pdf reports
-To deal with pdf reports, we first converted them into unstructured txt data, and then using pandas, regular expression and helper function to extract the 
-information from txt files. Then we reorganized the information into pandas dataframe.
+	1.2 pdf reports
+	To deal with pdf reports, we first converted them into unstructured txt data, and then using pandas, regular expression and helper function to extract the information from txt files. Then we reorganized the information into pandas dataframe.
 
 2. data merging
 As we collected data from multiple data sources, we needed to connect all of them in some way to make full use of all the data. Therefore, we chose to give
@@ -56,7 +55,7 @@ For those companies and brands have similiar but not the same names, we utilized
 After completing all the matches, we outputed the pandas dataframe into csv files, which were ready for database input.
 
 
-Django
+**Django**
 
 1. Database Build_up
 After we failed to replace the default with imported database(we posted this question on piazza but didn't figure out in the end), we switched to write six model classes(one for each of our data tables). 
