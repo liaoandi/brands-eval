@@ -1,4 +1,5 @@
-##(CAPP 30122)Final Group Project on Ethical Consumerism
+## (CAPP 30122)Final Group Project on Ethical Consumerism
+--------------------------------------------------------
 
 **Name:**capp-project  
 **Members:** Yuqian Gong, Andi Liao & Xiuyuan Zhang  
